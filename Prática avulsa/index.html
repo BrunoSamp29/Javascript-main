@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual o seu nome?')
+        confirm('Você é maior de idade?')
+        var idade = Number(prompt('Qual a sua idade'))
+        var salário = Number(prompt('Quanto você ganha de salário?'))
+        alert(`Que legal! É um prazer te conhecer, ${nome}`)
+        alert(`Iniciaremos agora, prepare-se!`)
+        document.write(`Bem-vindo a nossa área de atendimento, ${nome}. Como você esta? <br/> Fiquei sabendo que você tem ${idade} anos de idade, que bacana!<br/> Também consta no meu terminal que você ganha em média ${salário.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} <br/>`)
+        var Soma = idade + salário
+        document.write(`Você sabia que a soma de sua idade com seu salário é igual a ${Soma}?`)
+    </script>
+</body>
+</html>

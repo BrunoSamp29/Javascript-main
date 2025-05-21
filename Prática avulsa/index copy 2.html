@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jAVAsCRIPT</title>
+</head>
+<body>
+    <script>
+       alert('Olá, bom dia! Tudo bem?')
+       alert('Me chamo Bruno, sou estudante de programação e vou seguir com sua experência em nosso site!')
+       var nome = prompt(`Vamos lá, me diga seu nome completo`)
+       var idade = Number(prompt(`Agora me diga qual sua idade`))
+       var port= Number(prompt(`Quais foram suas últimas médias nas áreas do conhecimento na prova do Enem. Começando por LÍNGUA PORTUGUESA:`))
+       var hum= Number(prompt(`Ciências Humanas:`))
+       var nat= Number(prompt(`Ciências naturais:`))
+       var mat= Number(prompt(`Matemática:`))
+       var red= Number(prompt(`Redação:`))
+       var média = (port + hum + nat + mat + red)/5
+       document.write(`Pronto, seu nome completo é ${nome} e sua média geral é ${média}`)
+    </script>
+</body>
+</html>
