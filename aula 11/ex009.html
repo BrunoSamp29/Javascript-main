@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de naturalidade</h1>
+    Sua nacionalidade é: <input type="text" name="txtnat" id="txtnat">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtnat = document.querySelector('input#txtnat')
+            var nat = String(txtnat.value)
+            var res = document.querySelector('div#res')
+            res.innerHTML += `<p>Então você é ${nat}</p>`
+            if (nat == "Brasileiro" || nat == "brasileiro"){
+                res.innerHTML += `<p>Então você nasceu no Brasil! Seja bem vindo!</p>`  
+            }else{
+                res.innerHTML += `<p>Vejo que é estrangeiro!</p>`
+            }
+            res.innerHTML += `<p>Fique a vontade!</p>`
+        }
+    </script>
+</body>
+</html>

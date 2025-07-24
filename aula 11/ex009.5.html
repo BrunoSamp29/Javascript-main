@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual a sua idade?</h1>
+    <input type="number" id="txtage" name="age"> 
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+    <script>
+         function verificar(){
+            var txtage = document.querySelector("input#txtage")
+            var age = Number(txtage.value)
+            var res = document.querySelector("div#res")
+
+            if (age >= 18){
+                res.innerHTML += `Seja bem-vindo!`
+            } else {
+                res.innerHTML += `Espere mais um pouco, você ainda é de menor idade!`
+            }
+         }
+    </script>
+</body>
+</html>

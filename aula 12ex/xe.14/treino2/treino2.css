@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(106, 255, 255);
+}
+header{
+
+}
+section{
+    width: 500px;
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.436);
+    font: normal 15pt arial;
+}
+footer{
+
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <p>Qual foi sua média no ENEM?</p>
+    <input type="number" name="média" id="txtmedia">
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <div id="med">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtmedia = document.querySelector("input#txtmedia")
+            var media = Number(txtmedia.value)
+            var med = document.querySelector("div#med")
+
+            if (media >= 700){
+                med.innerHTML = `Parabéns, você foi aprovado para Engenharia de Software!`
+            } else {
+                med.innerHTML = `Desculpe, sua média não foi suficiente, tente outra área.`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(89, 89, 255);
+    font: normal 15pt arial;
+}
+header{
+    text-align: center;
+    color: white;
+}
+header:hover{
+    transition-duration: 1s;
+    padding: 5px;
+}
+section{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.454);
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+div{
+    text-align: center;
+    padding: 5px;
+}   
+
