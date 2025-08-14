@@ -1,8 +1,11 @@
 body{
     background-color: rgb(106, 255, 255);
+    padding-top: 7%;
 }
 header{
-
+    font: bold 25pt arial;
+    text-align: center;
+    padding-bottom: 20px;
 }
 section{
     width: 500px;
@@ -11,7 +14,16 @@ section{
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.436);
     font: normal 15pt arial;
+    text-align: center;
+    margin: auto;
+}
+div#foto{
+    font: normal 15pt arial;
+}
+div{
+    margin: auto;
 }
 footer{
-
+    text-align: center;
+    font: italic 10pt arial;
 }
